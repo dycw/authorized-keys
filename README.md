@@ -1,3 +1,3 @@
-# `template`
+# `authorized-keys`
 
-Template for generic repositories
+Authorized keys
