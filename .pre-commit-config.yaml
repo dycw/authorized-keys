@@ -1,16 +1,16 @@
 repos:
-  - repo: https://github.com/dycw/conformalize
-    rev: 0.10.10
+  - repo: https://github.com/dycw/actions
+    rev: 0.10.4
     hooks:
-      - args:
+      - id: conformalize-repo
+        args:
+          - --ci--pull-request--pre-commit
+          - --ci--push--tag
           - --description=Authorized keys
-          - --github--pull-request--pre-commit
-          - --github--push--tag
           - --pre-commit--prettier
           - --pre-commit--taplo
           - --readme
           - --repo-name=authorized-keys
-        id: conformalize
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
