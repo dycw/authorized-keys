@@ -7,7 +7,5 @@ jobs:
   tag:
     runs-on: ubuntu-latest
     steps:
-      - name: Tag latest commit
-        uses: dycw/action-tag@latest
-        with:
-          token: ${{secrets.GITHUB_TOKEN}}
+      - name: Tag the latest commit
+        uses: dycw/action-tag-commit@latest
